@@ -1370,6 +1370,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
+    background: #2d3237;
     position: relative;
     margin: 3rem 0 0 0;
     padding: 1rem 15px;
