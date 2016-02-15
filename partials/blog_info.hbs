@@ -1,19 +1,16 @@
 <style type="text/css">
 
-    .logo {
+    .img-logo {
+        display: block;
         margin: 25px auto;
-        border-radius: 50%;
-        vertical-align: middle;
         width:100px;
         height:100px;
-        background:url({{@blog.logo}}) no-repeat center center;
-        background-size: cover;
     }
 </style>
 
 <div class="card">
     <div class="card-content">
-        <div class="logo"></div>
+        <img src="{{@blog.logo}}" class="img-thumbnail img-circle img-logo">
         <p style="text-align: center;"><strong style="color:#999">{{@blog.description}}</strong></p>
     </div>
 </div>
