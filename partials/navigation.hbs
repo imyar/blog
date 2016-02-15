@@ -13,6 +13,12 @@
 <!--<span class="nav-cover"></span>-->
 
 <style type="text/css">
+
+    .navbar-default {
+        background-color: #fff;
+        border-color: #e7e7e7;
+    }
+
     @media (min-width:760px)  {
         .container-fluid {
             padding-left: 5em;
@@ -23,6 +29,12 @@
     .nav-link {
         font-size: 1.6rem;
     }
+
+    .navbar-brand {
+        color:#178fe6;
+        font-weight: bold;
+    }
+
 </style>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -35,9 +47,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {{#if @blog.logo}}
-                <img alt="{{@blog.title}}" src="{{@blog.logo}}" style="height: 50px;padding: 5px;float: left;">
-            {{/if}}
+            <!--{{#if @blog.logo}}-->
+                <!--<img class="nav-logo" alt="{{@blog.title}}" src="{{@blog.logo}}">-->
+            <!--{{/if}}-->
             <a class="navbar-brand" href="{{@blog.url}}">
                 {{@blog.title}}
             </a>
