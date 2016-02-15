@@ -1,5 +1,11 @@
-<ul class="tag-cloud">
-    {{#foreach tags}}
-        <a href="{{url}}" class="tag-item">{{name}}<span class="post-count">{{post_count}}</span></a>
-    {{/foreach}}
-</ul>
+
+<div class="card">
+    <div class="card-title">
+        <h4>标签云</h4>
+    </div>
+    <div class="card-content">
+        {{#foreach tags}}
+            <a href="{{url}}" class="label label-primary" target="_blank">{{name}}</a>
+        {{/foreach}}
+    </div>
+</div>

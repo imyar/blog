@@ -2,6 +2,14 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The main content area on the homepage }}
+
+<style type="text/css">
+
+
+
+
+</style>
+
 <main id="content" class="content" role="main">
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
@@ -13,9 +21,16 @@
         </div>
 
         <div class="col-md-4">
-            <div style="background-color: #fff;height: 1000px;">
-                <strong>{{@blog.description}}</strong>
+
+            <div class="card">
+                <div class="card-content">
+                    <strong>{{@blog.description}}</strong>
+                </div>
             </div>
+
+            {{! 标签云 }}
+            {{tag_cloud}}
+
         </div>
     </div>
 
