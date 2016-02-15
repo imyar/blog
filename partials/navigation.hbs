@@ -58,10 +58,11 @@
         <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 {{#foreach navigation}}
-                <li class="nav-link{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+                    <li class="nav-link{{#if current}} active{{/if}}" role="presentation">
+                        <a href="{{url absolute="true"}}">{{label}}</a>
+                    </li>
                 {{/foreach}}
             </ul>
         </div>
-
     </div>
 </nav>
