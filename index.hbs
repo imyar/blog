@@ -5,10 +5,19 @@
 
 <style type="text/css">
 
+    @media (max-width:500px) {
 
+        .post {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
 
+    }
 
 </style>
+
+{{! 引用博客封面}}
+<!--{{>blog_cover}}-->
 
 <main id="content" class="content" role="main">
 
@@ -16,22 +25,20 @@
 
     <div class="row ">
 
-        <div class="col-md-8">
-            {{> "loop"}}
-        </div>
-
         <div class="col-md-4">
 
-            <div class="card">
-                <div class="card-content">
-                    <strong>{{@blog.description}}</strong>
-                </div>
-            </div>
+            {{! 博客信息 }}
+            {{>blog_info}}
 
             {{! 标签云 }}
             {{tag_cloud}}
 
         </div>
+
+        <div class="col-md-8">
+            {{> "loop"}}
+        </div>
+
     </div>
 
 
