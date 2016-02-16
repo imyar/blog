@@ -14,5 +14,4 @@
 
 ## 使用手册
 
-
-
+详细介绍见博客：http://blog.didispace.com/nodejs-ghost/
