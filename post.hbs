@@ -19,15 +19,31 @@
         }
     }
 
-    a {
+    article a {
         color : #337ab7;
     }
+
+    .post-content img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        padding: 4px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+
 </style>
 
 
 <div class="row ">
 
-    <div class="col-md-12">
+    <div class="col-md-8">
         {{#post}}
 
             <main class="content" role="main">
@@ -46,30 +62,30 @@
 
                     <footer class="post-footer">
 
-                        {{! Everything inside the #author tags pulls data from the author }}
-                        {{#author}}
+                        <!--{{! Everything inside the #author tags pulls data from the author }}-->
+                        <!--{{#author}}-->
 
-                            {{#if image}}
-                                <figure class="author-image">
-                                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}的头像</span></a>
-                                </figure>
-                            {{/if}}
+                            <!--{{#if image}}-->
+                                <!--<figure class="author-image">-->
+                                    <!--<a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}的头像</span></a>-->
+                                <!--</figure>-->
+                            <!--{{/if}}-->
 
-                            <section class="author">
-                                <h4><a href="{{url}}">{{name}}</a></h4>
+                            <!--<section class="author">-->
+                                <!--<h4><a href="{{url}}">{{name}}</a></h4>-->
 
-                                {{#if bio}}
-                                    <p>{{bio}}</p>
-                                {{else}}
-                                    <p>继续阅读此作者的<a href="{{url}}">更多文章</a>。</p>
-                                {{/if}}
-                                <div class="author-meta">
-                                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                                </div>
-                            </section>
+                                <!--{{#if bio}}-->
+                                    <!--<p>{{bio}}</p>-->
+                                <!--{{else}}-->
+                                    <!--<p>继续阅读此作者的<a href="{{url}}">更多文章</a>。</p>-->
+                                <!--{{/if}}-->
+                                <!--<div class="author-meta">-->
+                                    <!--{{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}-->
+                                    <!--{{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}-->
+                                <!--</div>-->
+                            <!--</section>-->
 
-                        {{/author}}
+                        <!--{{/author}}-->
 
                         <section class="share">
                             <h4>分享此博文</h4>
@@ -88,24 +104,24 @@
                 </article>
             </main>
 
-            <aside class="read-next">
-                {{#next_post}}
-                    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                        <section class="post">
-                            <h2>{{title}}</h2>
-                            <p>{{excerpt words="19"}}&hellip;</p>
-                        </section>
-                    </a>
-                {{/next_post}}
-                {{#prev_post}}
-                    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                        <section class="post">
-                            <h2>{{title}}</h2>
-                            <p>{{excerpt words="19"}}&hellip;</p>
-                        </section>
-                    </a>
-                {{/prev_post}}
-            </aside>
+            <!--<aside class="read-next">-->
+                <!--{{#next_post}}-->
+                    <!--<a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">-->
+                        <!--<section class="post">-->
+                            <!--<h2>{{title}}</h2>-->
+                            <!--<p>{{excerpt words="19"}}&hellip;</p>-->
+                        <!--</section>-->
+                    <!--</a>-->
+                <!--{{/next_post}}-->
+                <!--{{#prev_post}}-->
+                    <!--<a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">-->
+                        <!--<section class="post">-->
+                            <!--<h2>{{title}}</h2>-->
+                            <!--<p>{{excerpt words="19"}}&hellip;</p>-->
+                        <!--</section>-->
+                    <!--</a>-->
+                <!--{{/prev_post}}-->
+            <!--</aside>-->
 
         {{/post}}
 
@@ -125,11 +141,16 @@
         <!-- 多说公共JS代码 end -->
     </div>
 
-    <!--<div class="col-md-4">-->
-        <!--<div style="background-color: #fff;">-->
+    <div class="col-md-4">
 
-        <!--</div>-->
-    <!--</div>-->
+        {{!作者信息}}
+        {{>author_info}}
+
+        {{!标签云}}
+        {{tag_cloud}}
+
+
+    </div>
 
 
 </div>
