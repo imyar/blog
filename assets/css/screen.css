@@ -717,6 +717,7 @@ body.nav-opened .site-wrapper {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
+    margin-top: 1em;
     margin-bottom: 2rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
@@ -1834,7 +1835,7 @@ body:not(.post-template) .post-title {
 
 .card {
     position: relative;
-    margin-bottom: 4rem;
+    margin-top: 1em;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
     padding: 0px;
