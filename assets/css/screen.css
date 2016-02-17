@@ -1875,6 +1875,10 @@ body:not(.post-template) .post-title {
     border-width: 1px 0px;
 }
 
+.full-fill {
+    width: 100%;
+}
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
