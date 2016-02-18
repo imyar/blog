@@ -16,13 +16,14 @@
 
 - Bootstrap 3.3.5
 
-## 使用手册
+## Ghost搭建
 
-详细介绍可见博客：http://blog.didispace.com/nodejs-ghost/
+详细步骤：http://blog.didispace.com/nodejs-ghost/
 
 ## 主题说明
 
 待添加
+
 
 ## 代码高亮
 
@@ -41,3 +42,7 @@
 比如：样例中的样式是github，如果要选择下面的样式，就改为引用：`zenburn.min.css`
 
 ![输入图片说明](http://git.oschina.net/uploads/images/2016/0218/093048_9e3736a0_437188.png "在这里输入图片标题")
+
+## 添加统计
+
+。。。
