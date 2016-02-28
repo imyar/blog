@@ -1,4 +1,3 @@
-
 <style type="text/css">
 
     .author {
@@ -30,7 +29,9 @@
             {{/if}}
 
             <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
+                <h4>
+                    <a href="{{url}}">{{name}}</a>
+                </h4>
 
                 {{#if bio}}
                     <p>{{bio}}</p>
@@ -38,9 +39,12 @@
                     <p>继续阅读此作者的<a href="{{url}}">更多文章</a>。</p>
                 {{/if}}
                 <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    {{#if location}}<i class="fa fa-map-marker">&nbsp;{{location}}&nbsp;</i>{{/if}}
+                    {{#if website}}<i class="fa fa-home"><a href="{{website}}">&nbsp;{{website}}&nbsp;</a></i>{{/if}}
+                    <!--{{#if email}}<i class="fa fa-envelope">{{email}}</i>{{/if}}-->
                 </div>
+
+
             </section>
 
         {{/author}}
