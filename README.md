@@ -46,3 +46,13 @@
 ## 添加统计
 
 进入后台，使用`插入代码`功能，将“百度统计”，“CNZZ”之类的统计代码贴入即可。
+
+## 后台运行
+
+Forever (https://npmjs.org/package/forever)
+你可以使用 forever 以后台任务运行 Ghost 。forever 将会按照 Ghost 的配置，当进程 crash 后重启 Ghost。
+
+通过 npm install forever -g 安装 forever
+为了让 forever 从 Ghost 安装目录运行，输入 NODE_ENV=production forever start index.js
+通过 forever stop index.js 停止 Ghost
+通过 forever list 检查 Ghost 当前是否正在运行
