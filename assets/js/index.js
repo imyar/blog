@@ -10,6 +10,10 @@
 
     $document.ready(function () {
 
+        $.scrollUp({
+            scrollText: '<i class="fa fa-angle-up"></i>'
+        });
+
         var $postContent = $(".post-content");
         $postContent.fitVids();
 

@@ -35,6 +35,22 @@
             margin-top: 70px;
         }
 
+        #scrollUp {
+            background-color: #777;
+            color: #eee;
+            font-size: 40px;
+            line-height: 1;
+            text-align: center;
+            text-decoration: none;
+            bottom: 20px;
+            right: 20px;
+            overflow: hidden;
+            width: 46px;
+            height: 46px;
+            border: none;
+            opacity: .8;
+        }
+
     </style>
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -48,7 +64,7 @@
 
 {{navigation}}
 
-<div class="site-wrapper">
+<div id="top" class="site-wrapper">
 
     {{! Everything else gets inserted here }}
     <div class="main-content">
@@ -64,10 +80,9 @@
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
-
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-
+<script src="//cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 {{! The main JavaScript file for Casper }}
