@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset "plugin/font-awesome/css/font-awesome.min.css"}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     {{! Styles'n'Scripts }}
@@ -42,7 +42,7 @@
             line-height: 1;
             text-align: center;
             text-decoration: none;
-            bottom: 20px;
+            bottom: 50px;
             right: 20px;
             overflow: hidden;
             width: 46px;
@@ -52,6 +52,13 @@
         }
 
     </style>
+
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
+    <script src="{{asset "js/index.js"}}"></script>
+
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 
@@ -80,12 +87,6 @@
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="//cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
-<script src="{{asset "js/jquery.infinitescroll.min.js"}}"></script>
-<script src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>
