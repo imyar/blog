@@ -1041,20 +1041,20 @@ body:not(.post-template) .post-title {
 }
 
 /* Add a little circle in the middle of the border-bottom */
-.author-profile:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}
+/*.author-profile:after {*/
+    /*display: block;*/
+    /*content: "";*/
+    /*width: 7px;*/
+    /*height: 7px;*/
+    /*border: #E7EEF2 1px solid;*/
+    /*position: absolute;*/
+    /*bottom: -5px;*/
+    /*left: 50%;*/
+    /*margin-left: -5px;*/
+    /*background: #FFF;*/
+    /*border-radius: 100%;*/
+    /*box-shadow: #FFF 0 0 0 5px;*/
+/*}*/
 
 .author-image {
     -webkit-box-sizing: border-box;
