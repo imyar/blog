@@ -33,7 +33,6 @@
         <footer class="post-meta">
             {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
             {{author}}
-            <!--{{tags prefix=" 标签："}}-->
             {{tags prefix="&nbsp;<i class=\"fa fa-tags\"></i>&nbsp;"}}
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY年MM月DD日"}}</time>
         </footer>
@@ -41,9 +40,7 @@
     </article>
     {{/foreach}}
 
-    {{! Previous/next page links - displayed on every page }}
     {{pagination}}
-
 
 </div>
 
